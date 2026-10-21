@@ -12,7 +12,9 @@ dependencies = [
     "charset-normalizer==3.5.2",
     "fastapi[standard]>=0.146.0",
     "idna==3.20",
+    "pypinyin>=0.55.0",
     "requests==2.34.2",
+    "snownlp>=0.12.3",
     "urllib3==2.8.0",
 ]
 

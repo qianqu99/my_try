@@ -13,6 +13,7 @@ dependencies = [
     "fastapi[standard]>=0.146.0",
     "idna==3.20",
     "pypinyin>=0.55.0",
+    "python-dotenv>=1.2.4",
     "requests==2.34.2",
     "snownlp>=0.12.3",
     "urllib3==2.8.0",

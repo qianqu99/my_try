@@ -1,5 +1,8 @@
 {
     "python.defaultInterpreterPath": "/home/qianqu/zero-to-tech/backend/.venv/bin/python",
     "python.terminal.activateEnvironment": true,
-    "python.terminal.activateEnvInCurrentTerminal": true
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "workbench.editorAssociations": {
+        "*.db": "sqlite-viewer.view"
+    }
 }

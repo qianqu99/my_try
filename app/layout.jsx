@@ -6,6 +6,8 @@
 // 注意：导航条 Nav 不在这儿，它在每一页的 hero 里（HomeView / TextLabView 各放一份），
 // 这样整页布局和 4.4 完全一致。
 
+import Script from "next/script";
+
 import "../css/reset.css";
 import "../css/variables.css";
 import "../css/layout.css";
@@ -29,6 +31,18 @@ export default function RootLayout({ children }) {
             <main className="page-content">{children}</main>
           </div>
         </div>
+        <Script
+          id="google-tag-manager"
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-WWWF4B2L"
+          strategy="afterInteractive"
+        />
+        <Script id="google-tag-manager-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `}
+        </Script>
       </body>
     </html>
   );
